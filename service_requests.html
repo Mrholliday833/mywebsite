@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Collection Service Request</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: 
+                linear-gradient(rgba(255, 255, 255, 0.7), 
+                rgba(255, 255, 255, 0.7)),
+                url('picha.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            color: #2e8b57;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #2e8b57;
+        }
+        
+        input[type="text"],
+        input[type="date"],
+        input[type="time"],
+        select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        
+        .btn-group {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        
+        input[type="submit"],
+        input[type="reset"] {
+            flex: 1;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        input[type="submit"] {
+            background-color: #2e8b57;
+            color: white;
+        }
+        
+        input[type="reset"] {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #3cb371;
+        }
+        
+        input[type="reset"]:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Waste Collection Service Request</h1>
+        <form action="connect.php" method="post">
+            <div class="form-group">
+                <label for="special_instructions">Special Instructions:</label>
+                <input type="text" id="special_instructions" name="special_instructions" placeholder="Any special handling requirements">
+            </div>
+            
+            <div class="form-group">
+                <label for="quantity">Quantity (kg):</label>
+                <input type="text" id="quantity" name="quantity" placeholder="Estimated waste quantity in kilograms" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="waste_type">Waste Type:</label>
+                <input type="text" id="waste_type" name="waste_type" placeholder="e.g., Organic, Plastic, Metal" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="collection_time">Collection Time:</label>
+                <input type="time" id="collection_time" name="collection_time" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="collection_date">Collection Date:</label>
+                <input type="date" id="collection_date" name="collection_date" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="request_date">Request Date:</label>
+                <input type="date" id="request_date" name="request_date" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="assigned_driver_id">Assigned Driver ID:</label>
+                <input type="text" id="assigned_driver_id" name="assigned_driver_id" placeholder="Driver identification number" required>
+            </div>
+            
+            <div class="btn-group">
+                <input type="submit" name="submit" value="Wasilisha">
+                <input type="reset" value="Futa">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+body{
+    align-items: center;
+    background-color: white;
+}
+
+.success h1{
+    color: #2e8b57;
+}
+
+.success button:hover{
+    transition: 3s ease-in-out;
+    background-color: aliceblue;
+}
+.success button{
+    cursor: pointer;
+    color: #2e8b57;
+}

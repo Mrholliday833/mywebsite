@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>USAFI NI AFYA </title>
+  <style>
+    /* Internal CSS styling */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+      body {
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+    url('picha.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+    
+    
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    article {
+      background-color: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      color: #2e8b57;
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #2e8b57;
+      font-size: 1.1em;
+      margin-bottom: 20px;
+    }
+
+    .benefits {
+      background-color: #f0fff0;
+      padding: 15px;
+      border-left: 4px solid #2e8b57;
+      margin: 20px 0;
+    }
+
+    nav {
+      background-color: #2e8b57;
+      padding: 15px 0;
+      margin-bottom: 30px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 5px 10px;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #3cb371;
+    }
+
+    form {
+      background-color: #f9f9f9;
+      padding: 25px;
+      border-radius: 8px;
+      margin: 30px 0;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #2e8b57;
+    }
+
+    form input[type="text"],
+    form input[type="password"],
+    form input[type="email"],
+    form input[type="tel"],
+    form input[type="file"],
+    form select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    form input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    .radio-group {
+      margin-bottom: 15px;
+    }
+
+    .radio-group label {
+      display: inline;
+      font-weight: normal;
+      margin-right: 15px;
+    }
+
+    form input[type="submit"],
+    form input[type="reset"] {
+      background-color: #2e8b57;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-right: 10px;
+      transition: background-color 0.3s;
+    }
+
+    form input[type="submit"]:hover,
+    form input[type="reset"]:hover {
+      background-color: #3cb371;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #2e8b57;
+      color: white;
+    }
+
+    footer a {
+      color: #b2f0d1;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    address {
+      font-style: normal;
+      margin: 15px 0;
+    }
+
+    .contact-info {
+      margin-top: 20px;
+      font-size: 1.1em;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="about.html">About</a></li>
+     <li><a href="info.html">Info</a></li>
+      <li><a href="payments.html">payments</a></li>
+      <li><a href="service_requests.html">service_requests</a></li>
+      <li><a href="drivers.html">drivers</a></li>
+      <li><a href="feedback.html">feedback</a></li>
+    </ul>
+  </nav>
+  
+  
+
+
+  <main role="main">
+    <article>
+      <h1>USAFI NI AFYA</h1>
+      <p>Karibu kwenye USAFI NI AFYA mfumo wa kisasa wa uondoaji taka!</p>
+      <p>Je, umechoka na usumbufu wa kubeba taka kila siku?<br>
+      Je, taka zimekuwa changamoto katika nyumba yako au ofisi?</p>
+      <p>USAFI NI AFYA tumekuja kidigitali ili kurahisisha ubebeaji taka. Kupitia mfumo huu unaweza tuma maombi ya kubebewa taka mahali ulipo na huduma itakufikia kwa haraka.</p>
+
+      <div class="benefits">
+        <h3>Faida zetu sisi kama USAFI NI AFYA:</h3>
+        <ul>
+          <li>Urahisi wa kutuma maombi popote ulipo</li>
+          <li>Huduma zetu ni za haraka na kuaminika</li>
+          <li>Inapunguza uwingi wa taka eneo husika</li>
+        </ul>
+      </div>
+
+      <form action="connect.php" method="post" enctype="multipart/form-data">
+        <label for="full_name">full_name:</label>
+        <input type="text" id="full_name" name="full_name" required>
+
+        <label for="password">password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="email">email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="location">location:</label>
+        <input type="text" id="location" name="location" required>
+
+        <label for="photo">Photo:</label>
+        <input type="file" id="photo" name="photo">
+
+        <div class="radio-group">
+          <label>gender:</label>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">male</label>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">female</label>
+        </div>
+
+        <label for="phone">phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <input type="submit" name="submit" value="Wasilisha">
+        <input type="reset" value="Futa">
+      </form>
+
+      <address>
+        Tuma barua pepe kwetu: <a href="mailto:mrsystem563@gmail.com">mrsystem563@gmail.com</a>
+      </address>
+    </article>
+  </main>
+
+  <footer role="contentinfo">
+    <p>
+    
+    <div class="contact-info">
+      <p>Swali lolote au maoni:</p>
+      <p><a href="site-feedback.html">Mawasiliano na timu yetu
+        Tupigie simu: 0756030486 / 0759884657 <br>
+       <p> <small>&copy; 2025 | Haki zote zimehifadhiwa. Imetengenezwa na mrsystem</small></p>
+    <p>USAFI NI AFYA - Anza leo kuweka mazingira yako safi!!</p>
+        
+      </a></p>
+    </div>
+  </footer>
+</body>
+</html>
+
+
